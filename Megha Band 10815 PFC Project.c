@@ -4,6 +4,7 @@
 // Function to scan the matrix and display all danger zones
 void scanMatrix(int rows, int cols, int arr[rows][cols]) {
     int i, j;
+    printf("\n--- Danger Zone Positions ---\n");
 
     // Traverse each row and column
     for (i = 0; i < rows; i++) {
@@ -29,7 +30,7 @@ int main() {
     int matrix[rows][cols];
 
     // Input matrix elements where 1 = Danger, 0 = Safe
-    printf("Enter matrix elements (1 = Danger, 0 = Safe):\n");
+    printf("Enter matrix elements (1 = Danger Zone, 0 = Safe Zone):\n");
     for (i = 0; i < rows; i++) {
         for (j = 0; j < cols; j++) {
             scanf("%d", &matrix[i][j]);
@@ -37,7 +38,7 @@ int main() {
     }
 
     //Printing the matrix of entered elements
-    printf("Entered Matrix is:\n");
+    printf("Entered Matrix:\n");
     for (i = 0; i < rows; i++) {
         for (j = 0; j < cols; j++) {
             printf("%d ", matrix[i][j]);
@@ -50,3 +51,4 @@ int main() {
 
     return 0;
 }
+
